@@ -1,4 +1,4 @@
-import { welcomeUser } from './welcome-user.js';
+import { welcomeUser } from './helpers/welcome-user.js';
 
 export const startGame = (launchGame, description) => {
     const name = welcomeUser();

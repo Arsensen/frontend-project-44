@@ -1,4 +1,4 @@
-import { askQuestion } from "../src/cli.js";
+import { askQuestion } from "../cli.js";
 
 export const welcomeUser = () => {
     console.log('Welcome to the Brain Games!');

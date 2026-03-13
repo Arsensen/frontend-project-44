@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { baseQuestion } from "../src/basic-question.js";
+import { baseQuestion } from "../src/helpers/basic-question.js";
 import { startGame } from "../src/index.js";
 
 const generateProgression = () => {
