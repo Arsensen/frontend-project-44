@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-import { askQuestion } from "../src/cli.js";
+import { baseQuestion } from "../src/basic-question.js";
 import { startGame } from "../src/index.js"; 
 
 export const startEvenGame = (name) => {
     for (let i = 0; i < 3; i++) {
         const number = Math.floor(Math.random() * 100);
-        console.log('Question: ', number);
-        const answer = askQuestion('Your answer: ');
+        const answer = baseQuestion(number);
+
         if ((answer === 'yes' && number % 2 === 0) || (answer === 'no' && number % 2 === 1)) {
             console.log('Correct!');
         } else {

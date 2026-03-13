@@ -1,23 +1,8 @@
 #!/usr/bin/env node
-import { askQuestion } from '../src/cli.js';
+import { baseQuestion } from '../src/basic-question.js';
 import { startGame } from '../src/index.js';
 
-export const startCalcGame = (generateTask, name) => {
-    for (let i = 0; i < 3; i++) {
-        const [question, correctAnswer] = generateTask();
-
-        console.log(`Question: ${question}`);
-        const userAnswer = askQuestion('Your answer: ');
-
-        if (userAnswer === correctAnswer) {
-            console.log('Correct!');
-        } else {
-            throw new Error(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${name}!`);
-        }
-    }
-}
-
-export const generateTask = () => {
+const generateTask = () => {
     const operations = ['+', '-', '*'];
 
     const a = Math.floor(Math.random() * 100);
@@ -43,6 +28,21 @@ export const generateTask = () => {
     const question = `${a} ${op} ${b}`;
 
     return [question, String(answer)];
+}
+
+export const startCalcGame = (generateTask, name) => {
+    for (let i = 0; i < 3; i++) {
+        const [question, correctAnswer] = generateTask();
+
+        const userAnswer = baseQuestion(question);
+
+        if (userAnswer === correctAnswer) {
+            console.log('Correct!');
+        } else {
+            throw new Error(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${name}!`);
+        }
+    }
+    
 }
 
 startGame(startCalcGame.bind(this, generateTask), 'What is the result of the expression?');
