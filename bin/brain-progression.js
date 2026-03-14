@@ -18,7 +18,7 @@ const generateProgression = () => {
   return { question, correctAnswer: String(correctAnswer) }
 }
 
-export const startProgressionGame = name => {
+export const startProgressionGame = (name) => {
   for (let i = 0; i < 3; i++) {
     const { question, correctAnswer } = generateProgression()
     const answer = baseQuestion(question)

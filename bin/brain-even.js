@@ -2,7 +2,7 @@
 import { baseQuestion } from '../src/helpers/basic-question.js'
 import { startGame } from '../src/index.js'
 
-export const startEvenGame = name => {
+export const startEvenGame = (name) => {
   for (let i = 0; i < 3; i++) {
     const number = Math.floor(Math.random() * 100)
     const answer = baseQuestion(number)

@@ -2,7 +2,7 @@
 import { baseQuestion } from '../src/helpers/basic-question.js'
 import { startGame } from '../src/index.js'
 
-const isPrime = num => {
+const isPrime = (num) => {
   if (num <= 1) {
     return false
   }
@@ -23,7 +23,7 @@ const generatePrimeQuestion = () => {
   return { question: String(number), correctAnswer }
 }
 
-export const startPrimeGame = name => {
+export const startPrimeGame = (name) => {
   for (let i = 0; i < 3; i++) {
     const { question, correctAnswer } = generatePrimeQuestion()
     const answer = baseQuestion(question)

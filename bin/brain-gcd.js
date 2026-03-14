@@ -10,7 +10,7 @@ const gcd = (a, b) => {
   return String(a)
 }
 
-export const startGCDGame = name => {
+export const startGCDGame = (name) => {
   for (let i = 0; i < 3; i++) {
     let a = Math.floor(Math.random() * 100)
     let b = Math.floor(Math.random() * 100)
