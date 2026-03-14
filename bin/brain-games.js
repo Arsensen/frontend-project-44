@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { welcomeUser } from "../src/helpers/welcome-user";
+import { welcomeUser } from "../src/helpers/welcome-user.js";
 
 welcomeUser();

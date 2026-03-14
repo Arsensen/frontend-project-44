@@ -24,3 +24,19 @@ node bin/brain-gcd.js
 node bin/brain-progression.js
 node bin/brain-prime.js
 ```
+
+
+### Examples
+https://asciinema.org/a/DjSWHXbFDtMXnAHq
+https://asciinema.org/a/wYHhS5TbH2tXyW8j
+https://asciinema.org/a/TdZ5IdoUWSEaTI0I
+https://asciinema.org/a/tDUHiBWj9YZXNKEW
+https://asciinema.org/a/Pwt34yOdANVjaR6J
+https://asciinema.org/a/SXRp4fjE2que2MAI
+https://asciinema.org/a/EZl8M45tsMoPItfn
+https://asciinema.org/a/kI9RyspjqGkWfUS5
+https://asciinema.org/a/4VAckTEK4Gdxc4W9
+https://asciinema.org/a/VQpxpY5drgSKpkKK
+https://asciinema.org/a/qQZ8rcGFMCobuYdu
+https://asciinema.org/a/GyzrS7DwfX184avn
+https://asciinema.org/a/X9o00G9jwNKtHpPc
