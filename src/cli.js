@@ -1,3 +1,4 @@
 import readlineSync from 'readline-sync'
 
-export const askQuestion = (question) => readlineSync.question(question)
+// eslint-disable-next-line @stylistic/arrow-parens
+export const askQuestion = question => readlineSync.question(question)
