@@ -1,6 +1,6 @@
-import { askQuestion } from '../cli.js';
+import { askQuestion } from '../cli.js'
 
-export const baseQuestion = (question) => {
-    console.log(`Question: ${question}`);
-    return askQuestion('Your answer: ');
-};
+export const baseQuestion = question => {
+  console.log(`Question: ${question}`)
+  return askQuestion('Your answer: ')
+}
